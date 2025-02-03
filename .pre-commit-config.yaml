@@ -2,7 +2,7 @@ minimum_pre_commit_version: "2.9.0"
 exclude: "^tests/data/"
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: "v4.6.0"
+    rev: "v5.0.0"
     hooks:
       - id: check-toml
       - id: check-yaml
@@ -23,16 +23,16 @@ repos:
     hooks:
       - id: flynt
   - repo: https://github.com/pycqa/isort
-    rev: "5.13.2"
+    rev: "6.0.0"
     hooks:
       - id: isort
         args: ["--profile", "black", "--filter-files"]
   - repo: https://github.com/psf/black
-    rev: "24.4.0"
+    rev: "25.1.0"
     hooks:
       - id: black
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: "v1.9.0"
+    rev: "v1.14.1"
     hooks:
       - id: mypy
         additional_dependencies:
